@@ -3,6 +3,7 @@ import TodoApp from "./pages/todo-app/TodoApp";
 import ListExercise from "./pages/lists-and-keys/ListExercise";
 import ControlledForm from "./pages/controlled-input-form/ControlledForm";
 import ListFiltering from "./pages/list-filtering/ListFiltering";
+import ToggleRendering from "./pages/toggle-rendering/ToggleRendering";
 
 const routes = [
   {
@@ -34,6 +35,12 @@ const routes = [
     label: "List Rendering / Filtering",
     description: "filter a list of users",
     element: <ListFiltering />,
+  },
+  {
+    path: "/toggle",
+    label: "Toggle / Conditional Rendering",
+    description: "A toggle button component",
+    element: <ToggleRendering />,
   },
 ];
 
