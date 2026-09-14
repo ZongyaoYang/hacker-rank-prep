@@ -12,11 +12,16 @@ const Counter = () => {
     }
   };
 
+  const reset = () => {
+    setCount(0);
+  };
+
   return (
     <div>
       <span data-testid="count">{count}</span>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
+      <button onClick={reset}>Reset</button>
     </div>
   );
 };
