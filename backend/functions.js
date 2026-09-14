@@ -2,6 +2,7 @@
 
 function getActiveUsers(users) {
   // TODO: return an array of names for users where isActive is true
+  return users.filter((user) => user.isActive).map((user) => user.name);
 }
 
 // ---- Test harness (simulates what HackerRank does behind the scenes) ----

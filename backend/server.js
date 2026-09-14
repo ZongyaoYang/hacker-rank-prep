@@ -13,6 +13,11 @@ const users = [
 // TODO: implement this route so it returns only active users' names as JSON
 app.get("/users/active", (req, res) => {
   // your code here
+  const activeNames = users
+    .filter((user) => user.isActive)
+    .map((user) => user.name);
+
+  res.json(activeNames);
 });
 
 const PORT = 3000;
